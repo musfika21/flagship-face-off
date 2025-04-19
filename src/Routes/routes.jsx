@@ -10,7 +10,7 @@ export const router = createBrowserRouter([
     {
       path: '/',
       Component: MainLayout,
-      errorElement: ErrorPage,
+      errorElement: <ErrorPage/>,
       children: [
         {
             // default children can be write like this or path '/' like this.
