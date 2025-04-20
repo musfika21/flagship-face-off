@@ -16,7 +16,8 @@ export const router = createBrowserRouter([
             // default children can be write like this or path '/' like this.
             // index: true,
             path: '/',
-            Component: Home
+            Component: Home,
+            loader: () => fetch('phones.json')
         },
         {
             path: '/about',
